@@ -66,15 +66,17 @@ export const styles = StyleSheet.create({
   },
   buttonText: {
     textAlign: "center",
+    textAlignVertical:"center",
     color: "#FFFFFF",
-    fontSize: hp("3.5%"),
+    fontSize: hp("3%"),
+    marginBottom:5,
     
   },
   welcomeButtonStyle:{
     top:100,
     backgroundColor: "#2467EC",
-    width:   responsiveWidth(88),
-    height:   responsiveHeight(8),
+    width:   responsiveWidth(80),
+    height:   responsiveHeight(6),
     alignSelf: "center",
     justifyContent: "center",
     alignItems: "center",
