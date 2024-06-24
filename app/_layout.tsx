@@ -3,10 +3,10 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { View } from 'react-native';
-import OnBoarding from './(routes)';
+import WelcomeIntroScreen from './(routes)/onboarding/index';
 
 
 
@@ -49,10 +49,12 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   
-
-  return (
-    <View>
-      <OnBoarding/>
-    </View>
-  );
+    const [isLoggedIn,SetisLoggedIn] = useState(false);
+  return <>{isLoggedIn ? <View></View>:(
+    <Stack screenOptions={{headerShown:false}}>
+      <Stack.Screen name="index"/>
+      <Stack.Screen name="(routes)/welcome-intro/index"/>
+      </Stack>
+  )}
+  </>
 }

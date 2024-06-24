@@ -1,7 +1,8 @@
-import OnBoardingScreen from '@/Screens/onboarding/onboarding.screen'
-export default function OnBoarding() {
+import WelcomeIntroScreen from '@/Screens/onboarding/welcome.into'
+
+export default function WelcomeIntro() {
   return (
-    <OnBoardingScreen/>
+    <WelcomeIntroScreen />
   )
 }
 
