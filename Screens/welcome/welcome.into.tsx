@@ -1,4 +1,4 @@
-import { View, Text, Image, SafeAreaView } from "react-native";
+import { View, Text, Image, SafeAreaView, TouchableOpacity } from "react-native";
 import {
   Nunito_400Regular,
   Nunito_600SemiBold,
@@ -23,6 +23,10 @@ export default function WelcomeIntroScreen() {
   }
 
   const renderItem = ({ item }: { item: onboardingSwiperDataType }) => (
+    <LinearGradient
+        colors={["#E5ECF9", "#F6F7F9"]}
+        style={{ flex: 1, paddingTop: 20 }}
+      >
     <SafeAreaView style={{margin:10,}}>
       <View style={{ marginTop: 80 }}>
         <Image
@@ -58,8 +62,11 @@ export default function WelcomeIntroScreen() {
             {item.sortDescrition2}
           </Text>
         </View>
+        
       </View>
+
       </SafeAreaView>
+      </LinearGradient>
   );
 
   return (
@@ -73,7 +80,7 @@ export default function WelcomeIntroScreen() {
         router.push("/login");
       }}
       renderNextButton={() => (
-        <View style={styles.welcomeButtonStyle}>
+        <View style={commonStyles.welcomeButtonStyle}>
           <Text
             style={[styles.buttonText, { fontFamily: "Nunito_600SemiBold" }]}
           >
@@ -82,9 +89,9 @@ export default function WelcomeIntroScreen() {
         </View>
       )}
       renderDoneButton={() => (
-        <View style={styles.welcomeButtonStyle}>
+        <View style={commonStyles.welcomeButtonStyle}>
           <Text
-            style={[styles.buttonText, { fontFamily: "Nunito_600SemiBold" }]}
+            style={[commonStyles.buttonText, { fontFamily: "Nunito_600SemiBold" }]}
           >
             Done
           </Text>

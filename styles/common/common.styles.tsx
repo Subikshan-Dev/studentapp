@@ -61,4 +61,32 @@ export const commonStyles = StyleSheet.create({
     position: "absolute",
     top: 60,
   },
+  buttonWrapper: {
+    
+    backgroundColor: "#2467EC",
+    width: wp("92%"),
+    paddingVertical: 18,
+    borderRadius: 4,
+    
+    
+  },
+  buttonText: {
+    textAlign: "center",
+    textAlignVertical:"center",
+    color: "#FFFFFF",
+    fontSize: hp("3%"),
+    marginBottom:5,
+    
+  },
+  welcomeButtonStyle:{
+    
+    backgroundColor: "#2467EC",
+    width:   responsiveWidth(80),
+    height:   responsiveHeight(6),
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+    
+  }
 });
