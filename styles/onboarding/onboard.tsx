@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
     top: -20,
   },
   titleText: {
-    top:-50,
+    top:-30,
     fontSize: hp("3.8%"),
     textAlign: "center",
   },
@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     left: 60,
   },
   dscpWrapper: {
-    top:-30,
+    top:-20,
     marginTop: 8,
     
   },
