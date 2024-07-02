@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./Screens/**/*.{js,jsx,ts,tsx}"],
+  assets: ['./assets/fonts'],
   theme: {
     extend: {
       colors: {
@@ -11,6 +12,7 @@ module.exports = {
         'innovat-gray':'#99A1B7',
         'innovat-liblue':'#E9F3FF',
         'innovat-bdgray':'#797676',
+        'innovat-bdgray2':'#545454',
       },
     },
   },

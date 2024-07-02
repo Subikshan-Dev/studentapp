@@ -22,16 +22,16 @@ const CreateILPPlan = () => {
         <Text className="p-5 bg-blue-500 rounded-lg font-semibold text-gray-50 px-6 relative text-base">
           1
         </Text>
-        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-white px-6 relative text-base ">
+        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-blue-500 px-6 relative text-base ">
           2
         </Text>
-        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-white px-6 relative text-base">
+        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-blue-500 px-6 relative text-base">
           3
         </Text>
-        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-white px-6 relative text-base">
+        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-blue-500 px-6 relative text-base">
           4
         </Text>
-        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-white px-6 relative text-base">
+        <Text className="p-5 bg-innovat-liblue rounded-lg font-semibold text-blue-500 px-6 relative text-base">
           5
         </Text>
       </View>
@@ -63,8 +63,8 @@ const CreateILPPlan = () => {
           } rounded-lg`}
         >
           <Text className="p-2 text-lg font-semibold">Short 30 Days Plan</Text>
-          <Text className="whitespace-pre-line m-2 text-gray-600 bottom-2">
-              Create a Short 15 days or 30 days ILP For    
+          <Text className=" m-2 text-gray-600 bottom-2">
+                    Create a Short 15 days or 30 days ILP For    
           </Text>
           <Text className="text-gray-600 bottom-2">Building a skill</Text>
         </View>
