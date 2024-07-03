@@ -57,7 +57,11 @@ function RootLayoutNav() {
       <Stack.Screen name="(routes)/login/index"/>
       <Stack.Screen name="(routes)/forgot-password/index" />
       <Stack.Screen name="(routes)/test/index" />
-      {/* <Stack.Screen name="(routes)/sign-in-form/index" /> */}
+      <Stack.Screen name="(routes)/onboard2/index" />
+      <Stack.Screen name="(routes)/onboard3/index" />
+      <Stack.Screen name="(routes)/onboard4/index" />
+      <Stack.Screen name="(routes)/onboard5/index" />
+      <Stack.Screen name="(routes)/sign-in-form/index" />
 
       </Stack>
   )}

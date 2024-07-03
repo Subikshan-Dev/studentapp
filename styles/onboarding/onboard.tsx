@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     top: -20,
   },
   titleText: {
+    color:'#0D66B0',
     top:-30,
     fontSize: hp("3.8%"),
     textAlign: "center",
@@ -46,14 +47,14 @@ export const styles = StyleSheet.create({
     left: 60,
   },
   dscpWrapper: {
-    top:-20,
+    top:100,
     marginTop: 8,
     
   },
   dscpText: {
     textAlign: "center",
     color: "#122758",
-    fontSize: hp("2.3%"),
+    fontSize: hp("2.5%"),
   },
   buttonWrapper: {
     top:10,
@@ -73,7 +74,7 @@ export const styles = StyleSheet.create({
     
   },
   welcomeButtonStyle:{
-    top:100,
+    top:150,
     backgroundColor: "#2467EC",
     width:   responsiveWidth(80),
     height:   responsiveHeight(6),
