@@ -70,7 +70,8 @@ const CreateILPPlan = () => {
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => router.push("/(routes)/CreatePlan2")}>
         <View className="bg-blue-500 flex-row p-0 rounded-lg w-32 justify-center left-11 absolute">
           <Text className="items-centre top-3 text-base left-3 text-white align-text-top">Continue</Text>
           <Image className="top-px left-1" resizeMode="center" source={require("@/assets/icons/Arrow right.png")} />

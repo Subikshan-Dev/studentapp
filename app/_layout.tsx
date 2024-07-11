@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 import { View } from 'react-native';
 import WelcomeIntroScreen from './(routes)/onboarding/index';
-
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 
 
 export {
@@ -25,7 +25,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require('../assets/fonts/Orienta-Regular.ttf'),
     ...FontAwesome.font,
   });
 
@@ -51,7 +51,7 @@ function RootLayoutNav() {
   
     const [isLoggedIn,SetisLoggedIn] = useState(false);
   return <>{isLoggedIn ? <View></View>:(
-    <Stack screenOptions={{headerShown:false}}>
+    <Stack screenOptions={{headerShown:false,}}>
       <Stack.Screen name="index"/>
       <Stack.Screen name="(routes)/welcome-intro/index"/>
       <Stack.Screen name="(routes)/login/index"/>
@@ -62,6 +62,7 @@ function RootLayoutNav() {
       <Stack.Screen name="(routes)/onboard4/index" />
       <Stack.Screen name="(routes)/onboard5/index" />
       <Stack.Screen name="(routes)/sign-in-form/index" />
+      
 
       </Stack>
   )}

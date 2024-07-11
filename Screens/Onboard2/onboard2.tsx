@@ -1,8 +1,10 @@
 import { router } from "expo-router";
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from "react";
 import { Pressable, Text, StyleSheet, View, Image, TouchableOpacity } from "react-native";
 
 export default function Onboard2Screen() {
+  const navigation = useNavigation();
   return (
     <View className="flex-1 justify-center items-center">
        <View className="isolate">

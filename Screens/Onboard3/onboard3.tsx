@@ -26,7 +26,7 @@ export default function Onboard3Screen() {
         <Text  className="font-Semibold text-base text-innovat-bdgray2">by conducting experiments</Text>
       </View>
       <View className="top-24">
-        <TouchableOpacity onPress={() => router.push("/(routes)/onboard2")}>
+        <TouchableOpacity onPress={() => router.push("/(routes)/onboard4")}>
         <View className="bg-innovat-orange flex-row p-0 rounded-lg w-80 justify-center ">
           <Text className="items-centre  text-xl  text-white align-text-top p-3 ">CHOOSE PLAN</Text>
           {/* <Image className="top-px left-1" resizeMode="center" source={require("@/assets/icons/Arrow right.png")} /> */}
@@ -34,7 +34,7 @@ export default function Onboard3Screen() {
       </TouchableOpacity>
       </View>
       
-      <View className="top-24">
+      <View className="top-28">
         <Text className="font-Semibold text-base text-innovat-bdgray2">Like this for your child</Text>
       </View>
     </View>

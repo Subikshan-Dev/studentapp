@@ -13,6 +13,8 @@ module.exports = {
         'innovat-liblue':'#E9F3FF',
         'innovat-bdgray':'#797676',
         'innovat-bdgray2':'#545454',
+        'innovat-bdgray3':'#B3B3B3',
+        'innovat-bdgray4':'#E9E9E9',
       },
     },
   },

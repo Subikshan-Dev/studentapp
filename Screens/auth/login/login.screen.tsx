@@ -210,7 +210,7 @@ import {
                   marginTop: 15,
                 }}
                 // onPress={handleSignIn}
-                onPress={() => router.push("(routes)/sign-in-form")}
+                onPress={() => router.push("(routes)/")}
               >
                 {buttonSpinner ? (
                   <ActivityIndicator size="small" color={"white"} />

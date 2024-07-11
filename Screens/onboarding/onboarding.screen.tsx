@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, SafeAreaView } from "react-native";
 import { useFonts, Raleway_700Bold } from "@expo-google-fonts/raleway";
 import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import { LinearGradient } from "expo-linear-gradient";
@@ -18,6 +18,7 @@ export default function OnBoardingScreen() {
   }
 
   return (
+    <SafeAreaView className="flex-1  ">
     <LinearGradient
         colors={["#E5ECF9", "#F7F7F9"]}
         style={{ flex: 1}}
@@ -62,5 +63,6 @@ export default function OnBoardingScreen() {
         
     </View>
     </LinearGradient>
+    </SafeAreaView>
   );
 }
