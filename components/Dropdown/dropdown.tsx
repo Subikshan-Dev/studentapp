@@ -10,6 +10,7 @@ import {
   } from "react-native";
   import React, { useCallback, useRef, useState } from "react";
   import { AntDesign } from "@expo/vector-icons";
+  import { Ionicons } from '@expo/vector-icons';
   
   type OptionItem = {
     value: string;
@@ -44,6 +45,7 @@ import {
     }, []);
     return (
       <View
+      
         ref={buttonRef}
         onLayout={(event) => {
           const layout = event.nativeEvent.layout;
@@ -62,7 +64,8 @@ import {
           onPress={toggleExpanded}
         >
           <Text style={styles.text}>{value || placeholder}</Text>
-          <AntDesign name={expanded ? "caretup" : "caretdown"} />
+          <Ionicons style={styles.dropicon} name={expanded ? "chevron-up" : "chevron-down"} size={18} color="gray" />
+          
         </TouchableOpacity>
         {expanded ? (
           <Modal visible={expanded} transparent>
@@ -103,6 +106,7 @@ import {
   
   const styles = StyleSheet.create({
     backdrop: {
+      
       padding: 16,
       justifyContent: "center",
       alignItems: "center",
@@ -146,6 +150,7 @@ import {
       opacity: 0.8,
     },
     button: {
+      
       height: 50,
       justifyContent: "space-between",
       backgroundColor: "#E9E9E9",
@@ -154,5 +159,8 @@ import {
       alignItems: "center",
       paddingHorizontal: 15,
       borderRadius: 8,
+    },
+    dropicon:{
+        left:20,
     },
   });

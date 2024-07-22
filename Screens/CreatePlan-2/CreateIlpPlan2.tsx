@@ -103,7 +103,7 @@ const CreateILPPlan2 = () => {
         </View>
         <View className="absolute top-[270]">
           <Text className="bottom-24 right-[110]">Start Date</Text>
-          <Image className=" right-12 bottom-28 align-text-bottom " resizeMode="center" source={require("@/assets/img/req.png")} />
+          <Image className=" right-10 bottom-28 align-text-bottom " resizeMode="center" source={require("@/assets/img/req.png")} />
         </View>
         <View className="absolute top-[270] -right-5">
           <Text className="bottom-24 right-[110]">End Date</Text>
@@ -112,7 +112,7 @@ const CreateILPPlan2 = () => {
       </View>
       
 
-      <View className="absolute top-[500] left-8">
+      <View className="absolute top-[550] left-14">
         <TouchableOpacity onPress={handlePress} className="bg-innovat-bdgray4 p-3 w-36 justify-center rounded-md">
           <TextInput
             className="text-black justify-evenly text-center text-sm"
@@ -129,7 +129,7 @@ const CreateILPPlan2 = () => {
           />
         )}
       </View>
-      <View className="absolute top-[500] right-[32]">
+      <View className="absolute top-[550] right-[58]">
         <TouchableOpacity onPress={handlePress2} className="bg-innovat-bdgray4 p-3 w-36 justify-center rounded-md">
           <TextInput
             className="text-black justify-evenly text-center text-sm"

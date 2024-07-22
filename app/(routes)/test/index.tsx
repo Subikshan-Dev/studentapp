@@ -7,10 +7,12 @@ import OnBoardingScreen from '@/Screens/onboarding/onboarding.screen'
 import CreateILPPlan from '@/Screens/CreatePlan-1/CreateIlpPlan1'
 import React from 'react'
 import CreateILPPlan2 from '@/Screens/CreatePlan-2/CreateIlpPlan2'
+import CreateILPPlan3 from '@/Screens/CreatePlan-3/CreateIlpPlan3'
+import CreateILPPlan4 from '@/Screens/CreatePlan-4/CreateIlpPlan4'
 
 export default function Login() {
   return (
-    <CreateILPPlan2/>
+    <CreateILPPlan4/>
     
   )
 }
