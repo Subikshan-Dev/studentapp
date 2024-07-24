@@ -63,6 +63,7 @@ function RootLayoutNav() {
       <Stack.Screen name="(routes)/onboard5/index" />
       <Stack.Screen name="(routes)/sign-in-form/index" />
       <Stack.Screen name="(routes)/CreatePlan4/index" />
+      <Stack.Screen name="(routes)/home/index" />
       
 
 
