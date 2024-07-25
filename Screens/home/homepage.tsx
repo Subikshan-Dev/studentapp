@@ -1,102 +1,44 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image, ScrollView,StatusBar } from 'react-native';
 import { Pressable } from 'react-native';
 
 
 const HomePage = () => {
-  
+  let StudentName = "{Student Name}";
 
   return (
-    <ScrollView className="flex-grow p-4 bg-white">
-      <View className="items-center mb-6">
-        <Image source={require('@/assets/img/logo.png')} className="w-30 h-10" />
-        <Text className="mt-2 text-lg text-gray-600">Welcome [Student Name]</Text>
+    <ScrollView className="flex-grow  bg-white">
+      <StatusBar barStyle="dark-content" />
+      <View className='top-6  '>
+      <Image className="h-24 right-[160]  " resizeMode="center" source={require("@/assets/img/innologo.png")} />
+      <Image className="absolute h-[30] left-80 top-10    " resizeMode="center" source={require("@/assets/img/Generic avatar.png")} />
       </View>
-      <View className="p-4 mb-4 bg-gray-100 rounded-lg">
-        <Text className="mb-2 text-lg font-semibold text-blue-700">Student Name</Text>
-        <Text className="text-sm text-gray-600">List Of Individual Learning Plans</Text>
+      <View className=' border-b border-gray-400 mt-4 mb-2 w-full'/>
+      <View className='flex-row items-center justify-between ml-2  mt-2 w-full'>
+        <Text className='text-sm font-thin text-innovat-bdgray'>Welcome {StudentName}</Text>
       </View>
-      <View className="p-4 mb-4 bg-yellow-100 rounded-lg">
-        <Text className="mb-2 text-lg font-semibold text-yellow-600">IECP</Text>
-        <Text className="text-sm text-yellow-600">
-          Discover Bright Spots How To Find 100 Shining Qualities in Your Child Bright Spots Are
-          Glimpses Of Your Child's Hidden Talent, Skill And They Indicate Your Child's Unique
-          Strength And Traits. If Education Revolves Around Their Bright Spots, Your Child Can
-          Achieve Greater Success And Amazing Career Opportunities.
-        </Text>
-      </View>
-      <View className="p-4 mb-4 bg-gray-100 rounded-lg">
-        <Text className="mb-2 text-lg font-semibold text-blue-700">Update Your Daily Goal</Text>
-        <Text className="mb-2 text-sm text-gray-600">How To Set, Review Daily Goals?</Text>
-        <TextInput
-          className="p-2 mb-2 bg-gray-200 rounded"
-          placeholder="Enter Today's Smart Goal Here"
-        />
-        <TextInput
-          className="p-2 mb-2 bg-gray-200 rounded"
-          placeholder="Reflect About Your Work"
-        />
-        <View className="flex-row items-center mb-2 space-x-2">
-          <TouchableOpacity className="flex-1 p-2 bg-gray-200 rounded">
-            <Text className="text-gray-600">Choose File</Text>
-          </TouchableOpacity>
-          <Text className="flex-1 text-center text-gray-600">No File Chosen</Text>
-        </View>
-        <TouchableOpacity className="flex-row items-center justify-center p-2 mb-2 bg-blue-500 rounded-lg">
-          <Text className="text-white">Submit</Text>
-          <Image source={require('@/assets/icons/Arrow right.png')} className="ml-2" />
-        </TouchableOpacity>
-      </View>
-      <View className="p-4 mb-4 bg-gray-100 rounded-lg">
-        <View className="flex-row mb-2 space-x-2">
-          <TouchableOpacity className="flex-1 p-2 bg-yellow-200 rounded-lg">
-            <Text className="text-center text-yellow-600">Progress</Text>
-          </TouchableOpacity>
-          <TouchableOpacity className="flex-1 p-2 bg-yellow-200 rounded-lg">
-            <Text className="text-center text-yellow-600">Daily Feedback</Text>
-          </TouchableOpacity>
-          <TouchableOpacity className="flex-1 p-2 bg-yellow-200 rounded-lg">
-            <Text className="text-center text-yellow-600">Reviews</Text>
-          </TouchableOpacity>
-          <TouchableOpacity className="flex-1 p-2 bg-yellow-200 rounded-lg">
-            <Text className="text-center text-yellow-600">Photos</Text>
-          </TouchableOpacity>
-        </View>
-        <View className="flex-row mb-2 space-x-2">
-          <Text className="flex-1 text-center text-gray-600">Started: May 1, 2024</Text>
-          <Text className="flex-1 text-center text-gray-600">Ends: Sept 1, 2024</Text>
-        </View>
-        <Text className="mb-2 text-center text-yellow-600">Goals</Text>
-        <Text className="p-2 mb-2 bg-blue-100 rounded text-blue-700">
-          "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt
-          Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation
-          Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat."
-        </Text>
-        <Text className="mb-2 text-center text-yellow-600">How To Measure?</Text>
-        <TouchableOpacity className="flex-row items-center justify-center p-2 bg-blue-500 rounded-lg">
-          <Text className="text-white">Submit</Text>
-          <Image source={require('@/assets/icons/Arrow right.png')} className="ml-2" />
-        </TouchableOpacity>
-      </View>
-      <View className="p-4 mb-4 bg-gray-100 rounded-lg">
-        <View className="flex-row items-center justify-between mb-2">
-          <Text className="text-blue-700">Observation Of Your Daily Goals</Text>
-          <TouchableOpacity>
-            <Image source={require('@/assets/img/plus.png')} className="w-6 h-6" />
-          </TouchableOpacity>
-        </View>
-        <Text className="mb-2 text-sm text-gray-600">How To Set, Review Daily Goals?</Text>
-        <View className="p-2 mb-2 bg-pink-100 rounded-lg">
-          <Text className="text-sm text-pink-600">Related Skill</Text>
-        </View>
-        <View className="flex-row mb-2 space-x-2">
-          <Text className="flex-1 text-center text-gray-600">Date: May 12, 2024</Text>
-          <Text className="flex-1 text-center text-green-600">{'{Staff Name}'}</Text>
-        </View>
-        <Text className="mb-2 text-center text-gray-600">Observation Title</Text>
-        <Text className="p-2 mb-2 text-center bg-gray-100 rounded text-gray-600">
-          Here The Observer Can Note Down The Observation Of The Corresponding Student Daily
-        </Text>
+      <View className='m-2  mt-6 border  border-innovat-bdgray3 h-[350] rounded-lg drop-shadow-2xl	 '>
+          <Text className='text-base mt-4 ml-4 text-innovat-blue'>
+          Student Name
+          </Text>
+          <Text className='text-sm ml-4 text-innovat-gray'>
+          List of Indivdual Learning Plans
+          </Text>
+          <View className='absolute h-8 bg-innovat-yellow w-8 rounded-md left-4 top-20 justify-center items-center' >
+            <Text className='text-xl text-white'>
+          1
+          </Text>
+          
+          </View>
+          <Text className='absolute top-[82] left-14 text-innovat-yellow text-base'>
+          IECP
+          </Text>
+          
+          <Text className='mt-16 ml-4 items-center justify-center p-2.5 leading-6'>
+          Discover Bright Spots
+How to Find 100 Shining Qualitiesin Your Child
+Bright Spots are glimpses of your child's hidden talent, skill and they indicate your child's unique strength and traits.If education revolves around their bright spots, your child can achieve greater success and amazing career opportunities.
+          </Text>
       </View>
     </ScrollView>
   );
