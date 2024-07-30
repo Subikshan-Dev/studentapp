@@ -1,0 +1,32 @@
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import * as DocumentPicker from 'expo-document-picker';
+import tailwind from 'tailwind-rn';
+
+const FilePicker = ({ onFilePicked }) => {
+  const [fileName, setFileName] = useState<string | null>(null);
+
+  const pickFile = async () => {
+    let result = await DocumentPicker.getDocumentAsync({});
+    if (result.type === 'success') {
+      setFileName(result.name);
+      onFilePicked(result);
+    }
+  };
+
+  return (
+    <View style={tailwind('flex-row items-center w-full rounded-lg overflow-hidden')}>
+      <TouchableOpacity
+        onPress={pickFile}
+        style={tailwind('flex-1 bg-gray-300 p-4')}
+      >
+        <Text style={tailwind('text-black text-center')}>{fileName ? 'Choose Another File' : 'Choose File'}</Text>
+      </TouchableOpacity>
+      <View style={tailwind('flex-1 bg-yellow-100 p-4')}>
+        <Text style={tailwind('text-yellow-600 text-center')}>{fileName ? fileName : 'No File Chosen'}</Text>
+      </View>
+    </View>
+  );
+};
+
+export default FilePicker;

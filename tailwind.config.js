@@ -16,6 +16,7 @@ module.exports = {
         'innovat-bdgray3':'#B3B3B3',
         'innovat-bdgray4':'#E9E9E9',
         'innovat-yellow':'#F6C000',
+        'innovat-lblue':'##E9F3FF',
       },
     },
   },

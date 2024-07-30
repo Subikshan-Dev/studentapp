@@ -27,6 +27,7 @@
     "@ui-kitten/components": "^5.3.1",
     "axios": "^1.7.2",
     "expo": "~51.0.17",
+    "expo-document-picker": "~12.0.2",
     "expo-font": "~12.0.7",
     "expo-image": "^1.12.12",
     "expo-image-picker": "~15.0.6",
@@ -44,6 +45,7 @@
     "react-native-animated-loader": "^1.0.0",
     "react-native-app-intro-slider": "^4.0.4",
     "react-native-async-storage": "^0.0.1",
+    "react-native-document-picker": "^9.3.0",
     "react-native-dropdown-picker": "^5.4.6",
     "react-native-dropdown-select-list": "^2.0.5",
     "react-native-element-dropdown": "^2.12.1",
@@ -62,6 +64,7 @@
     "react-native-webview": "13.8.6",
     "react-navigation": "^5.0.0",
     "stripe": "^16.0.0",
+    "tailwind-rn": "^4.2.0",
     "tailwindcss-react-native": "^1.7.10"
   },
   "devDependencies": {

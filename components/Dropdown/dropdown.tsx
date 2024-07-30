@@ -161,6 +161,6 @@ import {
       borderRadius: 8,
     },
     dropicon:{
-        left:20,
+        left:10,
     },
   });
