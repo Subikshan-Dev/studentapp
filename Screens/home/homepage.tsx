@@ -119,7 +119,7 @@ const HomePage = () => {
           <View></View>
         </View>
       </View>
-      <View className="ml-2 mr-2 mb-4 h-[500] border border-innovat-bdgray3 rounded-lg text-xs">
+      <View className="ml-2 mr-2 mb-4 h-[700] border border-innovat-bdgray3 rounded-lg text-xs">
         <View className="flex flex-row gap-[4] mt-6 mr-[10] ml-[8]  mb-16">
           <View className="bg-yellow-200 w-20 justify-center items-center flex-2 rounded-sm ">
             <Text>Progress</Text>
@@ -163,6 +163,69 @@ const HomePage = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Text>
+        </View>
+        <View className="m-4 justify-center items-center p-2 mb-4 ">
+          <View className="bg-yellow-100">
+            <Text className="p-1 pl-5 pr-5 text-base rounded-lg text-innovat-yellow ">
+              How to Measure?
+            </Text>
+          </View>
+        </View>
+        <View className="mt-4">
+          <View className="justify-center items-center ">
+            <Text className="text-base">Submit your Daily Work Here</Text>
+          </View>
+        </View>
+
+        <View className="justify-center items-center mt-8">
+          <TouchableOpacity>
+            <View className="m-4 justify-center items-center bg-blue-500 p-2 rounded-lg w-44">
+              <Text className="text-white text-xl">Submit</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View className="ml-2 mr-2 mb-4 h-[400] border border-innovat-bdgray3 rounded-lg text-xs">
+        <View>
+          <Text className="text-base mt-4 ml-4 text-innovat-blue">
+            Observation of Your Daily Goals
+          </Text>
+          <Text className="text-sm ml-4 text-innovat-gray">
+            How to set ,Review Daily Goals?
+          </Text>
+        </View>
+        <View>{/* for Add Icon Enga add pannanum */}</View>
+        <View className="mt-6 mr-4 ml-4 h-[280] border border-innovat-bdgray3 border-dashed ">
+          <View className="justify-center items-center bg-pink-100">
+            <Text className="text-pink-600 items-center top-3">
+              Related skill
+            </Text>
+            <View className="border border-innovat-bdgray3 border-dashed w-full m-3 top-3" />
+          </View>
+          <View className="m-2 top-4 mr-4">
+            <View className="flex flex-row justify-between">
+              <View className="flex flex-row gap-1">
+                <View>
+                  <Text className="text-gray-400">Date:</Text>
+                </View>
+                <View>
+                  <Text>May 12,2024 </Text>
+                </View>
+              </View>
+              <View>
+                <Text className="text-green-600">Staff Name</Text>
+              </View>
+            </View>
+          </View>
+          <View className="flex justify-center items-center top-8">
+            <Text className="text-gray-400">Observation Title</Text>
+          </View>
+          <View>
+            <Text className="m-2 text-center top-12">
+              Here the observer can note down the Observation of the
+              corresponding student Daily
+            </Text>
+          </View>
         </View>
       </View>
     </ScrollView>
