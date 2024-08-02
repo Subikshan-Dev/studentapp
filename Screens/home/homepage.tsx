@@ -14,9 +14,10 @@ import Dropdown from "@/components/Dropdown/dropdown";
 
 import * as DocumentPicker from "expo-document-picker";
 
+
 const HomePage = () => {
   let StudentName = "{Student Name}";
-
+  let StaffName = "{Staff Name}";
   return (
     <ScrollView className="flex-grow  bg-white">
       <StatusBar barStyle="dark-content" />
@@ -183,6 +184,196 @@ const HomePage = () => {
               <Text className="text-white text-xl">Submit</Text>
             </View>
           </TouchableOpacity>
+        </View>
+      </View>
+      <View className="ml-2 mr-2 mb-4 h-auto border border-innovat-bdgray3 rounded-lg text-xs pb-8">
+        <View className="flex flex-row gap-[4] mt-6 mr-[10] ml-[8]  mb-16">
+          <View className="bg-yellow-200 w-20 justify-center items-center flex-2 rounded-sm ">
+            <Text>Progress</Text>
+          </View>
+          <View className="bg-green-200 w-20 justify-center items-center flex-1 rounded-sm">
+            <Text>Daily Feedback</Text>
+          </View>
+          <View className="bg-violet-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Reviews</Text>
+          </View>
+          <View className="bg-red-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Photos</Text>
+          </View>
+        </View>
+
+        <View className="flex flex-row justify-between bottom-8 right-2">
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-innovat-liblue w-auto rounded-sm justify-center items-center ">
+              <Text className="text-blue-600 p-2 text-xs">
+                Learner’s Daily Goal
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-innovat-liblue w-auto rounded-sm justify-center items-center">
+              <Text className="text-blue-600 p-2 text-xs">
+                Feedback by the ILP Advisor
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        <View className="bottom-4">
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Daily Goal Title</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Daily Goal Title</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Daily Goal Title</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Daily Goal Title</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View className="ml-2 mr-2 mb-4 h-auto border border-innovat-bdgray3 rounded-lg text-xs pb-8">
+        <View className="flex flex-row gap-[4] mt-6 mr-[10] ml-[8]  mb-16">
+          <View className="bg-yellow-200 w-20 justify-center items-center flex-2 rounded-sm ">
+            <Text>Progress</Text>
+          </View>
+          <View className="bg-green-200 w-20 justify-center items-center flex-1 rounded-sm">
+            <Text>Daily Feedback</Text>
+          </View>
+          <View className="bg-violet-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Reviews</Text>
+          </View>
+          <View className="bg-red-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Photos</Text>
+          </View>
+        </View>
+
+        <View className="flex flex-row justify-between bottom-8 right-2">
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-green-200 w-auto rounded-sm justify-center items-center ">
+              <Text className="text-green-600 p-2 text-xs">Goal Progress</Text>
+            </View>
+          </View>
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-green-200 w-auto rounded-sm justify-center items-center">
+              <Text className="text-green-600 p-2 text-xs">
+                Personality Progress
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        <View className="bottom-4">
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Goal Progress</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+              <Text className="text-right m-2 text-blue-600">
+                {"-"}
+                {StaffName}
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Goal Progress</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+              <Text className="text-right m-2 text-blue-600">
+                {"-"}
+                {StaffName}
+              </Text>
+            </View>
+          </View>
+          <View className="flex flex-row m-4 ">
+            <View className="m-2">
+              <Text className="mb-1">Goal Progress</Text>
+              <Text className="text-gray-500 text-xs">May 1,2024</Text>
+            </View>
+            <View className="ml-14 w-48 mt-2  ">
+              <Text className="text-center leading-5 text-gray-500">
+                He has started to do working with s goal today
+              </Text>
+              <Text className="text-right m-2 text-blue-600">
+                {"-"}
+                {StaffName}
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View className="ml-2 mr-2 mb-4 h-auto border border-innovat-bdgray3 rounded-lg text-xs pb-8">
+        <View className="flex flex-row gap-[4] mt-6 mr-[10] ml-[8]  mb-16">
+          <View className="bg-yellow-200 w-20 justify-center items-center flex-2 rounded-sm ">
+            <Text>Progress</Text>
+          </View>
+          <View className="bg-blue-200 w-20 justify-center items-center flex-1 rounded-sm">
+            <Text>Daily Feedback</Text>
+          </View>
+          <View className="bg-green-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Reviews</Text>
+          </View>
+          <View className="bg-pink-200 w-20 justify-center items-center flex-2 rounded-sm">
+            <Text>Photos</Text>
+          </View>
+        </View>
+
+        <View className="flex  justify-between bottom-8 right-2">
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-pink-200 w-auto rounded-sm justify-center items-center ">
+              <Text className="text-pink-600 p-2 text-xs">Photos</Text>
+            </View>
+          </View>
+          <View className="p-20" />
+          <View className="flex flex-row gap-3 m-2 text-xs">
+            <View className="bg-pink-200 w-auto rounded-sm justify-center items-center">
+              <Text className="text-pink-600 p-2 text-xs">Videos</Text>
+            </View>
+          </View>
+          <View className="p-20" />
         </View>
       </View>
       <View className="ml-2 mr-2 mb-4 h-[400] border border-innovat-bdgray3 rounded-lg text-xs">
