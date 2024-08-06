@@ -1,23 +1,26 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect, useState } from 'react';
+import { Stack, Tabs } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect, useState } from "react";
 
-import { View } from 'react-native';
-import WelcomeIntroScreen from './(routes)/onboarding/index';
-import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
-
+import { View } from "react-native";
+import WelcomeIntroScreen from "./(routes)/onboarding/index";
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from "@react-navigation/stack";
+import TabBar from "@/components/Tabs/TabBar";
 
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
-} from 'expo-router';
+} from "expo-router";
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(tabs)',
+  initialRouteName: "(tabs)",
 };
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -25,7 +28,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/Orienta-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/Orienta-Regular.ttf"),
     ...FontAwesome.font,
   });
 
@@ -46,7 +49,36 @@ export default function RootLayout() {
 
   return <RootLayoutNav />;
 }
-
+const _layout = () => {
+  return (
+    <Tabs tabBar={(props) => <TabBar {...props} />}>
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+        }}
+      />
+      <Tabs.Screen
+        name="explore"
+        options={{
+          title: "Explore",
+        }}
+      />
+      <Tabs.Screen
+        name="create"
+        options={{
+          title: "Create",
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+        }}
+      />
+    </Tabs>
+  );
+};
 function RootLayoutNav() {
   
     const [isLoggedIn,SetisLoggedIn] = useState(false);

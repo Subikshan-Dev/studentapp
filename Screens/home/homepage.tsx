@@ -39,7 +39,7 @@ const HomePage = () => {
           Welcome {StudentName}
         </Text>
       </View>
-      <View className="m-2  mt-6 border  border-innovat-bdgray3 h-[350] rounded-lg drop-shadow-2xl	 ">
+      <View className="m-2  mt-6 border  border-innovat-bdgray3 h-[350] rounded-lg    ">
         <Text className="text-base mt-4 ml-4 text-innovat-blue">
           Student Name
         </Text>

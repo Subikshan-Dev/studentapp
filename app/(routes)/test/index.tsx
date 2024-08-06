@@ -9,10 +9,11 @@ import React from 'react'
 import CreateILPPlan2 from '@/Screens/CreatePlan-2/CreateIlpPlan2'
 import CreateILPPlan3 from '@/Screens/CreatePlan-3/CreateIlpPlan3'
 import CreateILPPlan4 from '@/Screens/CreatePlan-4/CreateIlpPlan4'
+import StaffHome from "@/Screens/StaffHome/StaffHome";
+import HomePage from "@/Screens/home/homepage";
+import ObservationList from "@/Screens/StaffHome/ObservationList";
+import ReviewsOnLearners from "@/Screens/StaffHome/reviewsonlearners";
 
 export default function Login() {
-  return (
-    <CreateILPPlan4/>
-    
-  )
+  return <ReviewsOnLearners />;
 }
